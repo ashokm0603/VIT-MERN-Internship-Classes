@@ -1,0 +1,202 @@
+Web Page : 
+----------
+    ->HTML Document is called as Web Pages 
+
+
+Web Site : 
+------------
+    ->Collections of Web pages is called as web sites 
+
+Web server : 
+------------
+    ->Collections of web sites is called as web server
+
+Web Application : 
+-----------------   
+        1. static web Application
+            ->Any web Applications doesn't have functionality is called as static web Application
+            ->Ex: HTML , CSS
+
+        2. dynamic web Application
+            ->Any web Applications  having functionality is called as dynamic web Application
+            ->Ex: HTML , CSS and Javascript
+
+SGML
+
+
+HTML : (WWW)
+------------
+    ->HTML used to build structure of the Web pages
+    ->HTML will be introduced 1991 by tim berners lie
+    ->latest version HTML is HTML 5
+    ->HTML Having series of ELEMENTS 
+
+HTML structure / HTML boiler plat:
+------------------------------------
+
+HTML Tags : 
+
+    -> tag are pre-define words which are enclosed with both opening and closing angular brackets 
+
+    ->Types : 
+        1. paired tags 
+            ->any tags having opening and closing is a called paired tags
+            ->Ex: 
+                1. heading tags 
+                        <h1>heading tags-1</h1>
+                        <h2>heading tags-2</h2>
+                        <h3>heading tags-3</h3>
+                        <h4>heading tags-4</h4>
+                        <h5>heading tags-5</h5>
+                        <h6>heading tags-6</h6>
+
+                2. formatting tags : 
+                    Ex: 
+                         1. <b></b>
+                         2. <strong></strong>
+                         3. <u></u>
+                         4. <i></i>
+                         5. <em></em>
+                         6. <mark></mark>
+                         7. <sub></sub>
+                         8. <sup></sup>
+                         9. <center></center>
+                         10. <strike></strike>
+                         11. <marquee></marquee>
+
+
+                3. other tags 
+                    Ex: <p> </p>
+                        <div></div> 
+                        all sematic tags 
+                        all media
+
+
+
+        2. unpaired tags /self closing tags
+            ->any tags having only opening is a called unpaired tags
+            Ex: <br> , <hr> , <input/> ,<col> , <meta>, <DOCTYPE>
+
+HTML Elements  :
+--------------
+    ->Both opening , closing and content is called as html Elements
+    ->Ex: <h1>HELLO</h1>
+
+         <center>
+            <h1>heading tags-1   </h1>
+         </center>
+
+
+    1. block level Elements 
+        ->Any Elements which will consumes enter browser width is called block level ELEMENTS
+        Ex: 
+        heading tags , other tags 
+
+
+    2. inline level
+        ->Any Elements which will consumes only  content width is called inline level ELEMENTS
+        Ex: 
+        all formatting tags 
+
+HTML Attributes: 
+----------------
+    ->Additional information given to the tags is called Attributes
+    ->Every ELEMENTS having Attributes
+    ->Attributes are always in static tags(opening)
+    ->Attributes are key and value paired
+
+Ex: <h1  align="center style="color:red"> Attributes Example </h1>
+
+marquee Attributes : 
+    1.behavior : slide , scroll , alternate
+    2.direction: left , right , up , down 
+    3.scrollamount 
+    4.loop 
+    5.height
+    6.width
+
+List In HTML : 
+--------------
+    1.ordered List 
+            ->in html to represent ordered we need to use <ol></ol>
+            ->ordered List contains list of items  -><li></li>
+
+
+        ordered list Attributes : 
+            ----------------------
+                1. type : 1,a, A, i , I 
+                2. start 
+                3. reverse
+
+    2.unordered List 
+            ->in html to represent unordered we need to use <ul></ul>
+            ->unordered List contains list of items  -><li></li>
+
+
+        unordered list Attributes : 
+            ----------------------
+                1. type : none, disc , circle , square
+          
+
+
+    3.description List /Definition List 
+        -><dl></dl>  ->it description list / Definition list 
+        -><dt></dt>     ->description term 
+        -> <dd></dd>   ->description data
+
+
+
+    4.Nested List 
+
+Table : 
+------- 
+    ->table Attributes  
+        1.border
+        2.cellpadding 
+        3.cellspacing 
+        4.bgcolor
+        5.align
+
+
+    th/td
+    1. colspan ->to marge columns in table 
+    2. rowspan ->to marge rows in table 
+    3. align ->
+    4. bgcolor
+
+Forms : 
+-------
+    ->Forms are used Collect user information digitally 
+
+    Forms tag : 
+    ------------
+        1. <form></form>   ->
+        2. <fieldset></fieldset>   ->border of the form 
+        3. <labe></labe>       ->to labelling inputs 
+        4. <input/>            ->used Collect input form the user 
+        5. <button></button>   -> to display buttons 
+        6. <textarea></textarea> 
+        7. <select></select>  
+        8. <legend></legend>
+
+
+
+        input Type Values : 
+        -------------------
+            1. text 
+            2. password 
+            3. date 
+            4. year 
+            5. month 
+            6. week 
+            7. number 
+            8. tel 
+            9. file 
+            10. radio 
+            11. checkbox 
+            12. range 
+            13. color 
+            14. image 
+            15. search 
+            16. url 
+            

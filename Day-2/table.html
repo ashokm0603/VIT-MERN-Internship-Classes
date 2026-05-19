@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">
+        <u>Sample Table</u>
+    </h1>
+
+    <table border="1" cellspacing="0" cellpadding="20" align="center" bgcolor="gree">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+
+
+    <h1 align="center">
+        <u>Employee Details</u>
+    </h1>
+    <table align="center" border="1" cellpadding="10" cellspacing="0">
+
+        <colgroup>
+            <col span="1" bgcolor="magenta">
+            <col span="2" bgcolor="powderblue">
+            <col span="3" bgcolor="salmon">
+        </colgroup>
+
+
+
+        <thead>
+            <tr bgcolor="goldenrod">
+                <th>SlNO</th>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Salary</th>
+                <th>Experience</th>
+                <th>Address</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td >1</td>
+                <td >Ravi</td>
+                <td rowspan="3">Developer</td>
+                <td rowspan="2">90000</td>
+                <td>3</td>
+                <td>Bangalore</td>
+                <td>
+                    
+                    <button>
+                        <a href="./Employee1.html">View Profile</a>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sai</td>
+                <td>5</td>
+                <td>Vizag</td>
+                <td>
+                    <button>View Profile</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rani</td>
+              
+                <td>120000</td>
+                <td>6</td>
+                <td>Vizag</td>
+                <td>
+                    <button>View Profile</button>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Sai Kumar</td>
+                <td>Data Analyst</td>
+
+                <td>90000</td>
+                <td>5</td>
+                <td>Hyderabad</td>
+                <td>
+                    <button>View Profile</button>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td bgcolor="yellow"  colspan="7" align="center">2026 &COPY; copy right IBM Employee Details</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+    <h1 align="center">Task Example</h1>
+
+    <table align="center" border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Header</th>
+                <th>Header</th>
+                <th>Header</th>
+                <th>Header</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">Span Rows</td>
+                <td colspan="3" align="center">Span Columns</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">span Columns</td>
+                <td rowspan="3">Span both</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Span Rows</td>
+                <td>Span Column</td>
+            </tr>
+            <tr>
+                <td>Span Both</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
