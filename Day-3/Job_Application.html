@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <h2 align="center">TCS Job Application</h2>
+
+            <label for="fname">FirstName</label>
+            <input type="text" name="fname" minlength="3" maxlength="6" required id="fname" placeholder="Enter First Name">
+            <br><br>
+            <label for="lname">LastName</label>
+            <input type="text" name="lname" required id="lname" placeholder="Enter Last name">
+            <br><br>
+            <label for="age">Age</label>
+            <input type="number" min="18" max="30" required id="age" placeholder="Enter Last name">
+            <br><br>
+            <label for="phn">PhoneNo</label>
+            <select name="" id="" required>
+                <option value="">country code</option>
+                <option value="">+91</option>
+                <option value="">+081</option>
+                <option value="">+091</option>
+            </select>
+            <input type="tel" pattern="[6-9]{1}[0-9]{9}" required id="phn" placeholder="Enter Last name">
+            <br><br>
+
+            <label for="">Adhara Number</label>
+            <input type="text" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="">
+
+            <br><br>
+            <label for="dob">Date of Birth</label>
+            <input type="date" required id="dob" placeholder="Enter Last name">
+            <br><br>
+            <label for="dob">Gender</label>
+            <input type="radio" required name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+            <br><br>
+
+            <label for="">Email </label>
+            <input type="email" required placeholder="admin@gmail.com">
+
+
+            <br><br>
+            <label for="">City </label>
+            <select name="" id="" required default="Choose City">
+                <option value="">Choose City</option>
+                <option value="">Bangalore</option>
+                <option value="">Kochi</option>
+                <option value="">Chennai</option>
+                <option value="">Mumbai</option>
+                <option value="">Hyderabad</option>
+            </select>
+
+            <br><br>
+            <label for="">Address</label>
+            <textarea name="" id="" placeholder="Enter full address"></textarea>
+
+            <br><br>
+
+            <label for="">resume</label>
+            <input type="file" accept=".pdf , .doc">
+
+            <br><br>
+            <label for="">Languages </label>
+            <input type="range" value="100"> English
+            <input type="range" value="80"> Kannada
+            <br><br>
+
+            <label for="">Technical Skills </label>
+            <input type="checkbox">React Js
+            <input type="checkbox">Node Js and Express
+            <input type="checkbox">Dockers
+            <input type="checkbox">Nosql
+            <br><br>
+
+
+            <button type="submit">Apply</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
