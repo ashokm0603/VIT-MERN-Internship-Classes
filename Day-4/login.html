@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        label::after {
+            content: "*";
+            color: red;
+        }
+
+        button {
+            background-color: brown;
+            color: aliceblue;
+            font-family: monospace;
+            font-weight: bold;
+            font-style: italic;
+            border-radius: 8px;
+            border: none;
+        }
+
+        h1 {
+            color: green !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 style="text-align: center;color: red;font-size: 50px;">Login</h1>
+    <h1>HELLO</h1>
+    <form action=""
+        style="width: 100vw;height: 400px;background-image: linear-gradient(45deg, goldenrod , powderblue, blue);display: flex;justify-content: center; align-items: center;">
+        <fieldset
+            style="background-color: antiquewhite;padding: 30px;border-radius: 20px;box-shadow: 5px 5px 5px black;">
+            <label for="">UserName</label>
+            <input type="text" placeholder="Enter Username"> <br><br>
+            <label for="">Password</label>
+            <input type="password" placeholder="Enter password"><br><br>
+
+            <button type="submit">Login</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

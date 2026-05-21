@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Anchor Tag</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header, nav{
+            height: 90px;
+            background-color: salmon;
+            position: sticky;
+            top: 0;
+        }
+        ol{
+            height: 70px;
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            align-items: center;
+        }
+
+        li{
+            background-color: palegreen;
+            padding: 10px 30px;
+            border-radius: 8px;
+        }
+        a{
+            text-decoration: none;
+        }
+        #home{
+            height: 250px;
+            background-color: aquamarine;
+        }
+        #about{
+            height: 250px;
+            background-color: peachpuff;
+        }
+        #login{
+            height: 250px;
+            background-color: palegoldenrod;
+        }
+        #register{
+            height: 250px;
+            background-color: palevioletred;
+        }
+        #contact{
+            height: 250px;
+            background-color: navy;
+            color: aliceblue;
+        }
+        #help{
+            height: 250px;
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ol>
+                <li>
+                    <a href="./home.html">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html">About</a>
+                </li>
+                <li>
+                    <a href="#login">Login</a>
+                </li>
+                <li>
+                    <a href="#register">Register</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="#help">Help</a>
+                </li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to My Page</h1>
+
+            <a href="https://www.ibm.com/products/cloud-pak-for-aiops?lnk=flatitem" target="_parent" download>Click here to Open IBM Web Site</a>
+            <br><br>
+            
+            
+            <a href="./login.html" download>Click here to download login page</a>
+            <br><br>
+            <a href="./Dosti.mp3
+            " download>click here to download dosti song</a>
+            
+            
+            <br><br>
+            <a href="mailto:sai@gmail.com">CLick here to mail</a>
+            
+            <br><br>
+            
+            <a href="javascript:alert('HELLO EVERY')">Alert Message</a>
+
+        </section>
+        <section id="about">About Section</section>
+        <section id="login">Login</section>
+        <section id="register">Register</section>
+        <section id="contact">Contact</section>
+        <section id="help">help</section>
+    </main>
+
+
+</body>
+
+</html>
