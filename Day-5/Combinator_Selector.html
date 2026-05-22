@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* adjacent sibling Selector  */
+       ol+h1{
+        color: red;
+       }
+
+       /* general sibling Selectors  */
+       ol~h1{
+        color: magenta;
+       }
+
+
+       /* descendent selectors  */
+     ul p{
+        color: green;
+        font-weight: bold;
+        text-decoration: underline;
+       }
+
+
+       /* child selector  */
+       p>span{
+        color: plum;
+       }
+    </style>
+</head>
+
+<body>
+    <h1>List OrderList</h1>
+    <ol>
+        <li>List items in order list</li>
+        <li>List items in order list</li>
+        <li>List items in order list</li>
+        <li>List items in order list</li>
+    </ol>
+    <h1>unordered List</h1>
+    <ul>
+        <li>
+            <p>This is paragraph present in unordered List</p>
+        </li>
+        <li> List items present in unordered List</li>
+        <li>
+            <p>List items present in unordered List</p>
+        </li>
+        <li> List items present in unordered List</li>
+    </ul>
+    <h1>
+        Sample Heading
+    </h1>
+    <h3>
+        <h1>
+            <p>This is paragraph present inside Heading one</p>
+        </h1>
+    </h3>
+
+
+
+
+    <span> Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+    <div>
+        <p>
+            <span>
+                Ipsa temporibus corrupti adipisci unde at nulla esse cumque, minus officia debitis odio numquam quae
+                aliquid omnis nisi necessitatibus beatae porro laudantium?
+            </span>
+        </p>
+    </div>
+
+
+</body>
+
+</html>

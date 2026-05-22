@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* img[alt="first image"]{
+            height: 150px;
+            width: 200px;
+        } */
+
+        img[alt~='image'] {
+            width: 150px;
+            height: 200px;
+        }
+
+        li[id*="l"] {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li id="item">List items</li>
+        <li id="item-1">List items</li>
+        <li id="list item">List items</li>
+        <li>List items</li>
+        <li>List items</li>
+    </ol>
+
+    <img src="https://thumbs.dreamstime.com/b/incredibly-beautiful-sunset-sun-lake-sunrise-landscape-panorama-nature-sky-amazing-colorful-clouds-fantasy-design-115177001.jpg"
+        alt="first image">
+    <img src="https://png.pngtree.com/background/20250617/original/pngtree-a-light-bulb-hanging-in-the-garden-with-blur-nature-background-picture-image_16321841.jpg"
+        alt="second image">
+
+</body>
+
+</html>

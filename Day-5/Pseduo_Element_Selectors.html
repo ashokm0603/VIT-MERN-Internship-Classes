@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        h1::first-letter {
+            font-size: 40px;
+            color: red;
+            font-style: italic;
+            text-shadow: 5px 5px 5px black;
+        }
+
+        h1::before {
+            content: "Hi "
+        }
+
+        label::after {
+            content: "*";
+            color: red;
+        }
+
+        form label:first-of-type:before {
+            content: "🙎🏻";
+        }
+
+        form label:last-of-type:before {
+            content: "🔒";
+        }
+
+        p::first-line {
+            background-color: cadetblue;
+            color: burlywood;
+        }
+
+        li::marker {
+            color: red;
+            font-weight: bold;
+        }
+
+        p::selection{
+            color: blue;
+            background-color:palegoldenrod ;
+        }
+
+
+        input::placeholder{
+            font-style: italic;
+            color: rgba(255, 0, 0, 0.368);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1>Welcome to SignIn</h1>
+    <form action="">
+        <fieldset>
+            <legend>SignIn </legend>
+            <label for="">UserName :</label>
+            <input type="text" placeholder="Enter User Name"> <br><br>
+            <label for="">Password :</label>
+            <input type="password" placeholder="Enter password"><br><br>
+
+            <button type="submit">Signin</button>
+            <button type="reset">Cancel</button>
+        </fieldset>
+    </form>
+
+
+    <ol>
+        <li>list items</li>
+        <li>list items</li>
+        <li>list items</li>
+        <li>list items</li>
+        <li>list items</li>
+    </ol>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolore suscipit mollitia culpa quibusdam
+        porro rem facere autem vitae aperiam alias magnam, doloribus incidunt sunt minima ad eligendi! Sed, dignissimos.
+        Debitis ut vel quam. Enim illum magni maiores maxime odio voluptatem saepe architecto laborum earum aspernatur
+        atque rem possimus harum nisi explicabo mollitia minima, alias, reprehenderit quod expedita veniam qui.
+        Praesentium dicta ut repellat totam. Perspiciatis excepturi amet dolorem aut hic molestiae, ad soluta voluptatum
+        doloremque cupiditate, veniam earum libero voluptas perferendis architecto. Hic dolorum tempore maxime aperiam
+        molestias eaque.
+        Consequatur suscipit sit pariatur. Beatae a nobis quam voluptas? Quia, optio placeat corporis voluptas numquam
+        ducimus nisi corrupti rerum in sunt perferendis officia? Corporis nihil excepturi quas dolorum consequuntur
+        possimus?
+    </p>
+</body>
+
+</html>
