@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Rocker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: linear-gradient(blue, transparent);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-right: 30px;
+}
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+header img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px 0px;
+}
+
+header h2 {
+  width: 250px;
+  font-size: 40px;
+  background-image: linear-gradient(white, blue);
+  color: transparent;
+  -webkit-background-clip: text;
+  font-style: italic;
+  font-family: "New Rocker", system-ui;
+}
+header h2:hover {
+  cursor: pointer;
+}
+
+ol {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+li {
+  background-color: pink;
+  padding: 5px 20px;
+  border-radius: 8px;
+  margin: 5px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+main {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/019/523/927/small/abstract-digital-fingerprint-login-concept-identity-verification-illustration-with-digital-hand-wireframe-security-protection-on-a-futuristic-modern-background-vector.jpg");
+  background-size: cover;
+}
+
+fieldset {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px 50px;
+  backdrop-filter: blur(10px);
+  box-shadow: 5px 5px 5px aliceblue;
+}
+
+fieldset label {
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+fieldset > div {
+  margin-top: 20px;
+}
+input {
+  padding: 10px;
+}
+fieldset > div > button {
+  padding: 8px 20px;
+  margin: 8px;
+}
+form h3 {
+  /* text-align: center; */
+  margin: 0 auto;
+  font-family: "New Rocker", system-ui;
+  color: aliceblue;
+}
+
+.products-main-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 20px;
+  column-gap: 20px;
+  margin:50px 20px 0px 20px;
+}
+
+#product-container img {
+  height: 250px;
+  width: 180px;
+  border-radius: 20px;
+}
+
+#product-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: gray;
+}
+
+#product-container div{
+    display: flex;
+    flex-direction: column;
+}
