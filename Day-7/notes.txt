@@ -1,0 +1,502 @@
+Web Page : 
+----------
+    ->HTML Document is called as Web Pages 
+
+
+Web Site : 
+------------
+    ->Collections of Web pages is called as web sites 
+
+Web server : 
+------------
+    ->Collections of web sites is called as web server
+
+Web Application : 
+-----------------   
+        1. static web Application
+            ->Any web Applications doesn't have functionality is called as static web Application
+            ->Ex: HTML , CSS
+
+        2. dynamic web Application
+            ->Any web Applications  having functionality is called as dynamic web Application
+            ->Ex: HTML , CSS and Javascript
+
+SGML
+
+
+HTML : (WWW)
+------------
+    ->HTML used to build structure of the Web pages
+    ->HTML will be introduced 1991 by tim berners lie
+    ->latest version HTML is HTML 5
+    ->HTML Having series of ELEMENTS 
+
+HTML structure / HTML boiler plat:
+------------------------------------
+
+HTML Tags : 
+
+    -> tag are pre-define words which are enclosed with both opening and closing angular brackets 
+
+    ->Types : 
+        1. paired tags 
+            ->any tags having opening and closing is a called paired tags
+            ->Ex: 
+                1. heading tags 
+                        <h1>heading tags-1</h1>
+                        <h2>heading tags-2</h2>
+                        <h3>heading tags-3</h3>
+                        <h4>heading tags-4</h4>
+                        <h5>heading tags-5</h5>
+                        <h6>heading tags-6</h6>
+
+                2. formatting tags : 
+                    Ex: 
+                         1. <b></b>
+                         2. <strong></strong>
+                         3. <u></u>
+                         4. <i></i>
+                         5. <em></em>
+                         6. <mark></mark>
+                         7. <sub></sub>
+                         8. <sup></sup>
+                         9. <center></center>
+                         10. <strike></strike>
+                         11. <marquee></marquee>
+
+
+                3. other tags 
+                    Ex: <p> </p>
+                        <div></div> 
+                        all sematic tags 
+                        all media
+
+
+
+        2. unpaired tags /self closing tags
+            ->any tags having only opening is a called unpaired tags
+            Ex: <br> , <hr> , <input/> ,<col> , <meta>, <DOCTYPE>
+
+HTML Elements  :
+--------------
+    ->Both opening , closing and content is called as html Elements
+    ->Ex: <h1>HELLO</h1>
+
+         <center>
+            <h1>heading tags-1   </h1>
+         </center>
+
+
+    1. block level Elements 
+        ->Any Elements which will consumes enter browser width is called block level ELEMENTS
+        Ex: 
+        heading tags , other tags 
+
+
+    2. inline level
+        ->Any Elements which will consumes only  content width is called inline level ELEMENTS
+        Ex: 
+        all formatting tags 
+
+HTML Attributes: 
+----------------
+    ->Additional information given to the tags is called Attributes
+    ->Every ELEMENTS having Attributes
+    ->Attributes are always in static tags(opening)
+    ->Attributes are key and value paired
+
+Ex: <h1  align="center style="color:red"> Attributes Example </h1>
+
+marquee Attributes : 
+    1.behavior : slide , scroll , alternate
+    2.direction: left , right , up , down 
+    3.scrollamount 
+    4.loop 
+    5.height
+    6.width
+
+List In HTML : 
+--------------
+    1.ordered List 
+            ->in html to represent ordered we need to use <ol></ol>
+            ->ordered List contains list of items  -><li></li>
+
+
+        ordered list Attributes : 
+            ----------------------
+                1. type : 1,a, A, i , I 
+                2. start 
+                3. reverse
+
+    2.unordered List 
+            ->in html to represent unordered we need to use <ul></ul>
+            ->unordered List contains list of items  -><li></li>
+
+
+        unordered list Attributes : 
+            ----------------------
+                1. type : none, disc , circle , square
+          
+
+
+    3.description List /Definition List 
+        -><dl></dl>  ->it description list / Definition list 
+        -><dt></dt>     ->description term 
+        -> <dd></dd>   ->description data
+
+
+
+    4.Nested List 
+
+Table : 
+------- 
+    ->table Attributes  
+        1.border
+        2.cellpadding 
+        3.cellspacing 
+        4.bgcolor
+        5.align
+
+
+    th/td
+    1. colspan ->to marge columns in table 
+    2. rowspan ->to marge rows in table 
+    3. align ->
+    4. bgcolor
+
+Forms : 
+-------
+    ->Forms are used Collect user information digitally 
+
+    Forms tag : 
+    ------------
+        1. <form></form>   ->
+        2. <fieldset></fieldset>   ->border of the form 
+        3. <labe></labe>       ->to labelling inputs 
+        4. <input/>            ->used Collect input form the user 
+        5. <button></button>   -> to display buttons 
+        6. <textarea></textarea> 
+        7. <select></select>  
+        8. <legend></legend>
+
+
+
+        input Type Values : 
+        -------------------
+            1. text 
+            2. password 
+            3. date 
+            4. year 
+            5. month 
+            6. week 
+            7. number 
+            8. tel 
+            9. file 
+            10. radio 
+            11. checkbox 
+            12. range 
+            13. color 
+            14. image 
+            15. search 
+            16. url 
+            
+        Input Attributes : 
+            1. type 
+            2. placeholder 
+            3. value 
+            4. minlength 
+            5. maxlength
+            6. required 
+            7. min 
+            8. max
+            9. pattern     
+            10. accept
+
+
+Media tags In HTML 
+-----------------
+    1. image 
+        ->to display images in web pages <img> tag 
+        ->img tags Attributes 
+            1. src (source)
+                    ->src will accept Image address a value 
+                        1. relative path 
+                        2. absolute path (browser images)
+
+            2. height 
+            3. width 
+            4. alt 
+
+
+    2. video
+        -> <video></video> is used to display the videos
+        -> video tag Attributes 
+            1. src 
+            2. height 
+            3. width
+            4. controls 
+            5. loop
+            6. autoplay 
+            7. muted
+
+    3. audio
+        -><audio></audio> is used to display the audios in web pages
+        -> About tag Attributes 
+            1. src 
+            2. controls 
+            3. loop
+            4. autoplay 
+            5. muted
+
+    4. iframe
+
+        ->iframe is used to embed external youtube videos , web pages, web sites , google maps , document files ..etc 
+
+        1. src 
+        2. frameborder
+
+sematic tags 
+ ------------ 
+    ->HTML 5    
+    ->semantic tags are used to build structure of the web page 
+    ->using semantic we can increase the code Readability 
+    ->Using semantic tag we can increase SEO(search engine optimization)
+
+    Ex: 
+        <nav ></nav>
+        <header></header>
+        <footer></footer>
+        <main></main>
+        <section></section>
+        <aside></aside>
+        <article></article>
+        <details></details>
+        <strong></strong>
+        <em></em>
+        <time></time>
+
+
+
+Svg : 
+-------
+
+anchor tag : 
+-------------
+    -> <a></a> is the linking tag used to link urls or pages .etc 
+    ->anchor tags 
+        1. href : this will accept URL/file path as a value to navigate to page
+        2. download : 
+        3. target: : target will deicide where new page will open (in same tab/ different tab)
+                1. _blank  ->page open in new tag 
+                2. _self , 3. _parent 4. _top -> the page will be open in same tab
+
+
+
+CSS : 
+-----
+    ->Css stands for Cascading Style sheet 
+    ->CSS version CSS 3
+    ->CSS introduced in 1993 by the developer honkong wiem lie 
+    ->CSS used to applying's colorings , layouts of the page , animations , we can build responsive web page's ..etc 
+
+
+Methods to Write CSS/stylings (CSS/ styling implementation):
+---------------------------------------------------------------
+    1. inline Stylings 
+        ->applying styling by taking style Attribute in html Elements 
+        ->the is applied only Attribute  Element
+        ->here CSS selectors are not required to apply inline stylings 
+
+
+    2. Internal Stylings 
+    3. External Stylings 
+
+
+    CSS properties : 
+      {  key : value }
+
+
+CSS selectors : 
+--------------
+    ->to target HTML Elements during styling time we need CSS selectors
+    ->CSS selectors required only for internal and external Stylings 
+    Types: 
+        
+
+Text properties : 
+-----------------
+    1. text-colorings
+            1.color :colorValue;
+            2.text-shadow: x y alpha shadowColor
+
+    2. text-alignment properties
+            1. text-align: left , right , center , end , start , justify
+            2. word-spacing 
+            3. letter-spacing 
+            4. text-indent
+            5. line-height
+
+    4. text-decoration properties
+        1. text-decoration-line : underline , overline , line-through
+        2. text-decoration-style : solid , double , dashed , dotted , wavy
+        3. text-decoration-thickness: 
+        4. text-decoration-color 
+
+        5. text-decoration
+
+
+
+    5. text-transform properties
+            1. text-transform 
+    6. text overflow properties
+            1. overflow    :  visible , hidden , auto , scroll
+            2. overflow-x 
+            3. overflow-y
+    7. font properties
+            1. font-size 
+            2. font-weight 
+            3. font-style
+            4. font-family
+
+
+CSS Box Model : 
+-----------------
+    1. Content 
+    2. Padding 
+        ->The spacing content and border is called as Padding
+        -> Padding properties 
+            1. padding-top
+            2. padding-left
+            3. padding-right
+            4. padding-bottom
+            5. padding [short hand form]
+
+    3. Border 
+        ->The spacing padding and margin is called as border
+        -> border properties 
+            1. border-style : double , solid , dotted , dashed
+            2. border-width 
+            3. border-color 
+            4. border [short-hand form]
+            5.border-top
+            6.border-bottom
+            7.border-left 
+            8.border-right
+
+
+            9.  border-top-left-radius 
+            10. border-bottom-left-radius 
+            11. border-top-right-radius 
+            12. border-bottom-left-radius 
+            13 border-radius
+    4. Margin 
+        ->The spacing border and outline is called as Padding
+        -> Padding properties 
+            1. margin-top
+            2. margin-left
+            3. margin-right
+            4. margin-bottom
+            5. margin [short hand form]
+
+
+display properties : 
+--------------------
+    1. block 
+    2. none 
+    3. flex 
+    4. inline-flex 
+    5. inline-block 
+    6. grid
+
+
+
+
+flex properties: 
+-------------------
+    ->Flex properties are used to align items in directions 
+    ->with the help flex properties we can build responsive web Applications
+
+    1. display:flex 
+    2. align-items 
+    3. justify-content  :left , right, center , space-evenly , space-between , space-around
+    4. flex-direction
+    5. flex-wrap 
+
+
+    6. flex-grow 
+    7. flex-shrink 
+    8. flex 
+
+grid properties : 
+----------------
+    1. display:grid 
+    2. row-gap 
+    3. column-gap 
+    4. grid-temple-columns
+    5. grid-temple-rows 
+
+    6. grid-row-start
+    7. grid-row-end 
+    8. grid-column-start
+    9. grid-column-end 
+
+    transform properties 
+    ---------------------
+        1. scale(number, number)
+        2. scaleX(number)
+        3. scaleY(number)
+        4. rotate(0deg-360deg)
+        5. rotateX()
+        6. rotateY() 
+        7. skew(0deg-360deg)
+        8. skewX() 
+        9. skewY()
+        10. translate(px)
+        11. translateX() 
+        12. translateY()
+
+
+
+
+    Animations 
+    ----------
+        ->Animations are used to apply stylings from one formate to another formate in particular period 
+        ->To Declear animations 
+        Syntax 1: 
+                @keyframes AnimationName{
+                    from{}
+                    to{}
+                }
+
+        Syntax 2: 
+                @keyframes AnimationName{
+                    0%{}
+                    10%{}
+                    20%{}
+                    100%{}
+                }
+
+        ->This is animation will work only when it contains animation Duration and animation Name
+
+
+
+
+    Media Queries 
+    --------------
+        ->Media Queries are used build responsive web Applications / responsive web designing 
+        ->Syntax 
+            @media screen {
+
+            }
+
+        -> break points 
+            1. min-width 
+            2. max-width
+
+Position properties: 
+-------------------
+    1. position :static , relative , absolute , sticky , fixed
+    2. top 
+    3. left 
+    4. bottom 
+    5. right 
