@@ -1,0 +1,157 @@
+Javascript : 
+-------------
+    ->Javascript is the scripting language as well as programming language
+
+    ->Why we need Javascript 
+        1. To build dynamic web applications 
+        2. To add Functionalities to Web applications 
+        3. To Manipulate HTML and CSS we used JS 
+        4. To achieve DOM(Document object model ) need to use JS 
+        4. To fetch Data from the server(api) or we can send data to the server (api)
+
+
+Javascript  : 
+---------------
+    ->Javascript is developed by "Brendan Eich " in the year 1995 
+    ->first name of Javascript is "Mocha" in "net scape" company that is one of the browser company
+                                    -> Live Script 
+                                        ->Javascript 
+
+    ->ECMA (European Computing manufacturing Association) ->1996 
+            ->new feature ->ES1 (ECMA Script) 
+
+    ->The stable version Javascript 
+            Es6 
+    ->latest version of javascript is ES15
+
+
+java                                  |              javascript
+-------------------------------------------------------------------------
+->java is the object oriented          |  ->javascript is the scripting language
+programming language
+
+->in having both compiler and           | ->here only interpreter is there 
+interpreter
+
+->java strictly typed                  | not much strictly typed
+
+->imperative in nature                 | dynamically typed 
+
+->java will support multi               | javascript will support only single call stack
+    threading 
+
+
+Methods to implement javascript : 
+---------------------------------
+    1. inline
+    2. internal 
+    3. external
+
+
+Tokens : 
+--------
+    ->Tokens are the smallest units in the code 
+    ->Types : 
+        1. Identifiers 
+            ->Identifiers are the names given to JS code 
+            ->The place of Identifiers we can not use keywords
+            Ex: 
+                    variable name , class names , function names 
+
+        2. keywords 
+            ->keywords are the pre define words 
+            ->In JS we have total 66 keywords 
+                Ex: abstract , assert , boolean , break , byte , class , const , constant , continue , do , double , enum , else, finally , final , if, implements , import , instanceOf , try , public, private , typeOf ...
+
+        3. literals 
+                ->literals are the values given to JS code 
+
+        4. operators 
+            ->operators are the symbol's used to perform some operations on operands 
+            ->Ex: 10+20 
+
+            Type:
+             1. Athematic operators (+,-,*,/,%. **)
+             2. Assignment operators (=,+= ,-=,/=,*=,%=)
+             3. relational operators (>,<,>=,<=)
+             4. comparison operators (!=, ==, ===)
+             5. shift operators(>>,<<)
+             6. logical operators(&& ,|| , !)
+             7. bitwise operators( & ,|, !)
+             8. Unary operators (++ ,--)
+             9. ternary operators (condition ? expr1: expr2)
+
+
+        5. separators 
+            ->separators are used to given code 
+                Ex: , . , :,;, "" ,'' ,`` , [],{ },() ,<>
+
+        6. comments
+            ->comments are used to comments the code 
+            ->Types 
+                1. single line comments             // 
+                2. multi line comments              /*
+
+                                                        */
+
+Datatype's in Js 
+------------------
+    ->Datatype is represents the what type of data  we are storing on that variable
+    ->Types 
+        1. Primitive Datatype (immutable in nature)
+            1. number
+            2. string 
+            3. null 
+            4. boolean
+            5. undefine 
+            6. symbol
+            7. bigInt
+
+        2. Non Primitive Datatype (mutable in nature)
+
+            1. arrays 
+            2. object 
+            3. functions 
+
+     
+strings : 
+    ->strings are group of characters is called string 
+    ->In js we can declear String 3 different ways 
+        1. using "" 
+        2. using '' 
+        3. using ``   ->template string ,using backtick we can achieve sting enterpulation   ( ${})
+
+
+String Inbuilt Functions : 
+--------------------------
+    1. length 
+    2. slice() 
+    3. replace()
+    4. replaceAll()
+    5. indexOf()
+    6. lastIndexOf()
+    7. includes() 
+    8. toUpperCase()
+    9. toLowerCase()
+    10. toLocaleUpperCase()
+    11. toLocaleLowerCase()
+    12. trim()
+    13. trimstart()
+    14. trimend()
+
+
+Arrays: 
+-------
+    ->Arrays are the liner data structures used to store both homogenous and heterogenous data 
+    ->Arrays will follows indexes 
+    ->homogenous means similar type of data 
+    ->heterogenous means different of data 
+
+
+    ->In Js We can declear Arrays 2 ways 
+        1. literal way 
+        2. using new keyword (constructor) way 
+    
+
+Array Inbuilt : 
+----------------

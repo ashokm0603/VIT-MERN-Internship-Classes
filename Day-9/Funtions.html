@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <button onclick="test()">Click here to Executes</button>
+
+
+    <script>
+        function test() {
+            let a = 10;
+            let b = 20;
+            console.log("This is user Define function");
+            console.log(a + b);
+        }
+
+        // 1. Anonyms function 
+        // function(){
+        //     console.log("This is anonyms function");
+        // }
+
+
+        // 3. functional expression
+
+        let fun = function (a, b) {
+            console.log("This is anonyms function");
+            return a + b;
+        }
+
+        console.log(fun(10, 20));
+
+        fun(50, 300)
+        fun(900, 40)
+
+        //i. function with parameter
+        //    when ever we want to pass input to the function then we need to go with function with parameter 
+
+
+
+        function displayDetails(slNo, name, email, phone, address) {
+            console.log(`-------user ${slNo}------`);
+            console.log("User Name :", name);
+            console.log("User Email :", email);
+            console.log("User Phone :", phone);
+            console.log("User address :", address);
+
+            let password = "admin@123";
+            return password;
+        }
+
+        displayDetails(1, 'ravi', 'ravi@gmail.com', 9874561230, 'guntur');
+        displayDetails(2, 'sai', 'sai@gmail.com', 9874561230, 'vijayawada');
+
+
+
+
+
+        //4. immediate invoking function (IIF / self calling function)
+
+        (function () {
+            let password = "admin@123";
+            console.log("immediate invoking function");
+            console.log(password);
+
+            return password;
+        })
+            ()
+
+
+        //  5. Arrow function (ES 6)
+        let arrowFun = (a, b, c) => {
+            console.log("HELLO");
+            console.log("Arrow Function");
+            console.log(a);
+
+            console.log(a + b + c);
+            console.log("hello" - 50);
+
+        }
+
+
+        arrowFun()
+
+
+        // 6. nested function
+
+        function outerFun() {
+            let count = 0;
+            function innerFun() {
+                count = count + 1;
+                console.log(count);
+                console.log("inner function");
+            }
+
+            return innerFun;
+        }
+
+
+        let result = outerFun();
+        result();
+        result();
+        result();
+
+
+
+        // 7. higher order function
+
+        function homePage(a,b) {
+            console.log("This is home page");
+        }
+        function loginPage() {
+            console.log("This is login page functions here can write all login validation");
+        }
+        function RegisterPage() {
+            console.log("This is Register page functions here can write all Register validation");
+        }
+
+        homePage(RegisterPage(),loginPage())
+    
+
+
+        [10,20,30].some(()=>{})
+    </script>
+</body>
+
+</html>
