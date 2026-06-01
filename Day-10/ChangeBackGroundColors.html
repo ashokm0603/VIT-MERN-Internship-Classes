@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <span>
+        OTP's refers after every 3 seconds
+        <h1> </h1>
+    </span>
+
+
+    <script>
+
+
+
+        console.log(this);
+
+        const heading = document.querySelector('h1');
+        const body = document.querySelector('body')
+        setInterval(() => {
+            const otp = Math.floor(Math.random() * 1000000)   // 0.457214258  *1000000
+            heading.innerText = otp;
+            body.style.backgroundColor = `#${otp}`
+        }, 5000)
+    </script>
+</body>
+
+</html>

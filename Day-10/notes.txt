@@ -1,0 +1,67 @@
+   9. generator function
+
+
+
+   Variables : 
+   -------------
+         ->Variables are the named memory location used to store data/ values and it can change N number of times during execution
+
+         Ex: a=10;
+            a=20;
+      
+   Variables with different keywords 
+   ----------------------------------
+      1. let 
+            ->let Variables act's like a local scope/block scope
+            ->we can declear and initialized let Variables in same line / different line is possible 
+            ->let Variables re-initialization is possible but re-declaration is not possible
+            ->we can not hoist the let Variables
+
+
+      2. var 
+            ->var Variables act's like a global scope
+            ->we can declear and initialized var Variables in same line / different line is possible 
+            ->var Variables re-initialization and re-declaration both possible
+            ->we can  hoist the var Variables
+
+
+      3. const 
+            ->const Variables act's like a final(we can not modify the values) / block
+            ->we can declear and initialized const Variables in same line  is possible but  different line is possible 
+            ->const Variables re-initialization and re-declaration both not possible
+            ->we can not hoist the var Variables
+
+
+hoisting : 
+----------
+   ->utilizing Variables before declaration is called as a hoisting
+
+
+Object in javascript : 
+-----------------------
+   -> Objects are the real time entities used to store data in form of key and value pair
+   
+   Object inbuilt functions: 
+   ----------------------------
+      1. Object.keys()
+      2. Object.values() 
+      3. Object.entries()
+      4. Object.seal() 
+      5. Object.freeze()
+      6. Object.isSealed()
+      7. Object.isFrozen()
+
+Time intervals : 
+-------------------
+   1. setTimeout()
+         ->setTimeout() function will get execute only once after consuming same time
+
+   2. setInterval()
+
+
+BOM (Browser Object Model):
+----------------------------
+   ->each and every browsers having browser Model
+
+windows Object: 
+-------------------

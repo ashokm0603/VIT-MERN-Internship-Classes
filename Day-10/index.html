@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function* generator() {
+            yield a = 10;
+            yield 20;
+            console.log("This is generator function");
+        }
+
+        const result = generator();
+        console.log(result.next().value);
+        console.log(result.next().value);
+        result.next()
+
+    </script>
+</body>
+
+</html>
