@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: auto auto auto auto ;
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+        div{
+            border: 1px solid black;
+            padding: 10px;
+            background-color: burlywood;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+        let body = document.querySelector("body")
+        window.fetch('https://dummyjson.com/products').then((response) => response.json()
+        ).then((data) => {
+            let ALLProducts = data.products;
+            console.log(ALLProducts);
+            ALLProducts.forEach((product) => {
+
+                let card = document.createElement('div');
+                let image = document.createElement('img');
+                let cardTitle = document.createElement('h4');
+                let cardText = document.createElement("p")
+                let buy=document.createElement('button')
+                let cart=document.createElement('button')
+                buy.innerText='Buy'
+                cart.innerText='Add Cart'
+
+                image.src = product.thumbnail
+                cardTitle.innerText=`Name :${product.brand}`
+                cardText.innerText=`Name :${product.description}`
+                card.appendChild(image)
+                card.appendChild(cardTitle)
+                card.appendChild(cardText)
+                card.appendChild(buy)
+                card.appendChild(cart)
+                body.appendChild(card)
+            })
+
+
+        }
+        ).catch((err) => {
+            console.error(err);
+        })
+    </script>
+</body>
+
+</html>

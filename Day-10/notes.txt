@@ -64,4 +64,5 @@ BOM (Browser Object Model):
    ->each and every browsers having browser Model
 
 windows Object: 
--------------------
+----------------
+   ->windows is the predefine inbuilt object 

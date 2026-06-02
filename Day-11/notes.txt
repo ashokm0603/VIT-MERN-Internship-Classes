@@ -1,0 +1,86 @@
+BOM (Browser Object Model):
+----------------------------
+   ->each and every browsers having browser Model
+
+windows Object: 
+----------------
+   ->windows is the predefine inbuilt object 
+
+
+
+
+   Output Methods: 
+   ---------------
+    1. console.log()
+    2. console.error()
+    3. console.warn()
+    4. console.info()
+    5. console.table()
+    
+    6. alert() 
+    7. confirm()
+
+    8. document.write()
+    9. document.writeln()
+
+
+Input Method 
+-------------
+    1. prompt()
+
+
+Browser Storages: 
+------------
+    1. localstorage 
+            ->localstorage is the permanent Storage 
+            ->data will not delete until users deleted manually 
+            ->in localstorage data stored in the form of KEY and VALUE
+
+            Methods : 
+             1. localStorage.clear()
+             2. localStorage.removeItem('name')
+             3. localStorage.key(0)
+             4. localStorage.getItem(keyName)
+             5. localStorage.setItem(key , value)
+       
+    2. session Storage 
+            ->sessionStorage  is the temporary Storage 
+            ->data will  delete automatically when tab closed
+            ->in sessionStorage data stored in the form of KEY and VALUE
+            Methods : 
+             1. sessionStorage.clear()
+             2. sessionStorage.removeItem('name')
+             3. sessionStorage.key(0)
+             4. sessionStorage.getItem(keyName)
+             5. sessionStorage.setItem(key , value)
+
+    3. cookies
+        ->cookies are used to website related data / tokens 
+        ->Here data stored directly key-value  
+
+
+
+DOM (document object model): 
+----------------------------
+    ->DOM is the predefine inbuilt object present in windows
+     1. DOM Methods 
+     2. DOM Selectors
+     3. DOM Events
+
+
+Asynchronous Javascript: 
+-------------------------
+
+
+Promise : 
+----------
+    ->Promise is the predefine inbuilt Object
+        Stages/ States: 
+            1. pending stage 
+            2. fullfil stage / resolve stage 
+            3. reject Stages 
+
+
+    To handle Promise in two ways
+        1. using then() and catch()
+        2. using async and await

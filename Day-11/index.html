@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <button onclick="openNewPage()">Click Here</button>
+    <script>
+        window.console.log("<h4>HELLO</h4>")
+        window.console.error("This is error")
+        window.console.warn("This is worn ")
+        window.console.info("This is used information")
+        window.console.table([10, 20, 30, 50])
+
+        //    window.alert("alert message");
+        //    const result=confirm("Please confirm ur Name is :Reddy");
+        //    console.log(result);
+
+        document.write("<h4>HELLO</h4>")
+        document.writeln("<i>Javascript</i> <br>")
+        document.writeln("<mark>Javascript</mark>")
+
+
+        console.log(window.innerWidth);
+        console.log("Window Outer Width :", window.outerWidth);
+        console.log(window.innerHeight);
+        console.log(window.outerHeight);
+
+
+        const a = Number(prompt("Enter a value")) //10
+        const b = Number(prompt("Enter b value"))//20
+        console.log(a + b);
+
+        function openNewPage() {
+            window.open("../Day-1/List.html")
+        }
+    </script>
+</body>
+
+</html>
