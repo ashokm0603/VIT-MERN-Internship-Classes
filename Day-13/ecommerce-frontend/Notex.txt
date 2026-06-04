@@ -1,0 +1,127 @@
+React JS : 
+----------
+    ->React Js the small JS library used to build UI 
+    ->React is component based 
+    ->using will support Virtual DOM 
+    ->using we can build SPA(single Page of Application)
+
+
+way to Create react App : 
+--------------------------
+    using CLI(command line interface):
+        1. npx create-react-app projectName (npx react app will not support Plugins and different variants[ ts , tsx] )
+
+        2. npm create vite@latest
+
+Vite : 
+    ->Vite is the light weight react framework
+    
+
+
+-> In react Users Changes only in Virtual DOM  but that Virtual patched to Real DOM . 
+-> this process is called Reconciliation 
+->Reconciliation happens with the help of Diffing Algorithm
+React Follows the Diffing Algorithm 
+
+
+
+
+components In React :
+-----------------------
+    ->components are the smallest UI blocks 
+    ->Types 
+        1. Class based Components 
+            ->Any Components which is declear by 'class' keyword is called as class based component
+            ->CBC also called as a StateFull Component in CBC states will present 
+            ->CBC contains constructors , super keyword , this keyword , render methods 
+            ->in CBC life Cycle Methods are present 
+
+
+            Syntax: 
+                import {Component} from 'react';
+                class ComponentName extends Component{
+                        render(){
+                            return (
+                                here write html code
+                            )
+                        }
+                }
+                export default ComponentName
+
+
+        2. Functions Based Components
+            ->Any Components which is declear by 'function' keyword is called as function based component
+            ->FBC also called as a StateLess Component in FBC states are not present 
+            ->FBC not  contains constructors , super keyword , this keyword , render methods 
+            ->in FBC life Cycle Methods are not present
+
+
+            ->Syntax 1: 
+                function ComponentName(){
+                    return(
+                        here write html code 
+                    )
+                }
+                export default ComponentName
+
+            ->Syntax 2: 
+                const ComponentName=()=>{
+                    return(
+                        here write html code 
+                    )
+                }
+                export default ComponentName
+
+            ->Syntax 3: 
+                const ComponentName=function(){
+                    return(
+                        here write html code 
+                    )
+                }
+                export default ComponentName
+
+
+            hooks (16.8 ) 
+
+
+States In React : 
+-----------------
+    ->States are used to hold the data/values 
+    ->States are mutable in nature 
+    ->States are present only in CBC 
+    
+    1. States in CBC : 
+      ---------------
+        -> Syntax : 
+              import {Component} from 'react';
+                class ComponentName extends Component{
+                    constructor(){
+                        super(); 
+                        this.state=value
+                    }
+
+                        render(){
+                            return (
+                                here write html code
+                            )
+                        }
+                }
+        -> To mutate State values in CBC there is a method called 'setState()'
+
+    2. States in FBC : 
+      ---------------
+        ->In function we can  not declear states directly 
+        ->in the react version 16.8 they introduced 'Hooks' concept 
+        ->hooks are used to make functionBased component as a StateFull / Dynamic
+            ->Ex: useState() , useMemo() , useEffect() , useContext() , useNavigate() , useRef() .etc 
+
+
+
+
+Props (Properties): 
+-------------------
+    ->Props are used to transfer data from one component to another component
+    ->Here data can transfer from only parent to child component we can't do the reverse follow
+     ->so thats why react is one way data binding 
+     ->props are immutable in nature 
+     ->Props are present both in CBC and FBC 
