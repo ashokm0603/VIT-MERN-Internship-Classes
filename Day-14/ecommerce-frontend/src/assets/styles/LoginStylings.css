@@ -1,0 +1,17 @@
+#form-container{
+    margin: 20px;
+}
+
+#form-container form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-container fieldset{
+    width: 500px;
+    background-color: burlywood;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px ;
+}
