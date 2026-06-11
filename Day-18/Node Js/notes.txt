@@ -1,0 +1,26 @@
+Node Js : 
+----------
+    ->Node Js the Server side programming language that used to run javascript outside the browser 
+    ->Node Js will create Run Time Server side Environment to run JS code 
+    ->by default Node Js having V8 Javascript Engine 
+    ->Using Node we create API's and also create Server without express js 
+
+
+npm (node package manager): 
+---------------------------
+    ->npm is used to install external packages 
+
+
+Import and export modules in Node Js 
+-------------------------------------
+    1. Import modules 
+            ->using require() we can Import modules/ files 
+
+    2. export modules: 
+            ->using module.exports   we can export modules/files 
+
+
+
+Node Core Modules : 
+------------------- 
+
