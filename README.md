@@ -1,59 +1,61 @@
-# HTML Notes 📘
-
 Dear Students,
 
-I’m excited to share with you a detailed set of **HTML notes** that I’ve prepared to support your learning journey in web development. This resource is designed to give you a strong foundation in **HTML** and help you understand how web pages are structured and built.
+Please fill out the **Project Selection Form** using the link below:
+
+🔗 https://forms.gle/UUgJuqhQxiWt2pgy8
+
+Kindly enter your **Name**, **Roll Number**, and select your **Project Title** carefully. Ensure that all details are correct before submitting the form.
+
+Please submit your response at the earliest.
 
 ---
 
-##  What’s Inside?
+# 📂 Project SRS Repository
 
-### 🔹 Fundamental Concepts
-- Introduction to HTML  
-- Structure of an HTML document  
-- Purpose of HTML in creating web pages  
+All project **Software Requirements Specification (SRS)** documents are available in the GitHub repository below:
 
-### 🔹 Core Elements and Tags
-- Detailed explanations of essential HTML tags  
-- Attributes and their usage  
-- How elements work together to build a webpage  
+🔗 https://github.com/ashokm0603/MERN-Projects.git
 
-### 🔹 Practical Examples
-- Code snippets for better understanding  
-- Real-world examples demonstrating HTML implementation  
-
-### 🔹 Best Practices
-- Writing clean and readable HTML  
-- Using semantic HTML elements  
-- Accessibility-friendly coding guidelines  
-
-### 🔹 Additional Resources
-- Links to further reading materials  
-- Practice exercises to reinforce learning  
+Please review the SRS document of your selected project before starting development.
 
 ---
 
-## 🛠️ How to Use These Notes
+# 📚 Learning Resources & Notes
 
-### 1️⃣ Review the Content
-Start by reading through the sections to understand the basics of HTML, then gradually move on to more advanced topics.
+The following notes have been prepared to support your learning and project development:
 
-### 2️⃣ Practice Alongside
-Try running the example code on your own system. Experimenting with code is the best way to strengthen your understanding.
+### HTML Notes
 
-### 3️⃣ Ask Questions
-If you have any doubts or need clarification, feel free to ask during our sessions or through the class forum.
+🔗 https://carbonated-cirrus-a0f.notion.site/HTML-Notes-2ad3a34077d18118ab36ca9b13815023
 
-### 4️⃣ Apply Your Knowledge
-Work on the small projects and exercises provided at the end of the notes to apply concepts in a practical way.
+### CSS Notes
+
+🔗 https://carbonated-cirrus-a0f.notion.site/CSS-Notes-19b3a34077d180d184cad6b2b8a30811?source=copy_link
+
+### JavaScript Notes
+
+🔗 https://carbonated-cirrus-a0f.notion.site/Java-Script-1043a34077d180fab107e474631be6b7
+
+### React JS Notes
+
+🔗 https://carbonated-cirrus-a0f.notion.site/React-Js-10c3a34077d18060a692e59fd8553203?source=copy_link
 
 ---
 
-## Getting Started
+## How to Use These Resources
 
+1️⃣ Read the concepts carefully to understand the fundamentals.
 
-👉 <a href="https://carbonated-cirrus-a0f.notion.site/HTML-Notes-2ad3a34077d18118ab36ca9b13815023?source=copy_link" target="_blank">Click here to open the HTML Notes</a>
+2️⃣ Practice the examples and exercises on your own system.
+
+3️⃣ Refer to the notes while working on your project.
+
+4️⃣ Review the project SRS document before starting development.
+
+5️⃣ Reach out if you have any doubts or need clarification.
 
 ---
 
-By following these notes, you’ll build a solid understanding of HTML, which is essential as you progress further in web development. Take your time, practice regularly, and note down any questions you may have.
+These resources will help you strengthen your understanding of web development concepts and successfully complete your project work.
+
+**Happy Learning and Happy Coding! 🚀**
