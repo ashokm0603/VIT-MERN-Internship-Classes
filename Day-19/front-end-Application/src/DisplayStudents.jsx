@@ -1,24 +1,38 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
 
 const DisplayStudents = () => {
   const [students, setStudents] = useState([]);
 
-  const fetchStudents = () => {
+  const fetchStudents = async () => {
     try {
-      const response = axios.get("http://localhost:4000/get-details");
-      console.log(response);
-      
+      const response = await axios.get("http://localhost:4000/get-details");
+      console.log(response.data.AllStudentDetails);
+      setStudents(response.data.AllStudentDetails);
     } catch (error) {
       console.log(error);
     }
   };
 
-
-  useEffect(()=>{
+  useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    fetchStudents()
-  },[])
+    fetchStudents();
+  }, []);
+
+
+
+  const handleDelete=async(id)=>{
+      try {
+        axios.delete(`http://localhost:4000/delete-student/${id}`)
+        console.log(id);
+        fetchStudents();
+        toast.success("Record Deleted Successfully")
+      } catch (error) {
+        console.log(error);
+        
+      }
+  }
 
   return (
     <div className="m-5">
@@ -26,29 +40,34 @@ const DisplayStudents = () => {
       <table className="table">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Phone</th>
-            <th>RollNo</th>
-            <th>Actions</th>
+            <th className="bg-danger-subtle border border-danger text-center">Name</th>
+            <th className="bg-danger-subtle border border-danger text-center">Email</th>
+            <th className="bg-danger-subtle border border-danger text-center">Phone</th>
+            <th className="bg-danger-subtle border border-danger text-center">RollNo</th>
+            <th className="bg-danger-subtle border border-danger text-center">Actions</th>
           </tr>
         </thead>
         <tbody>
-          {
-            students.map((std)=>(
+          {students.length != 0 ? (
+            students.map((std) => (
               <tr>
-                <td>{std.name}</td>
-                <td>{std.email}</td>
-                <td>{std.phone}</td>
-                <td>{std.rollNo}</td>
-                <td>
-                  <button className="btn btn-danger">Delete</button>
+                <td className="border border-danger">{std.name}</td>
+                <td className="border border-danger">{std.email}</td>
+                <td className="border border-danger">{std.phone}</td>
+                <td className="border border-danger">{std.rolNo}</td>
+                <td className="border border-danger text-center">
+                  <button className="btn btn-danger" onClick={()=>handleDelete(std.rolNo)}>Delete</button>
                 </td>
               </tr>
             ))
-          }
+          ) : (
+            <tr>
+              <td className="border border-danger" colSpan={5} align="center">Student Details Not Found</td>
+            </tr>
+          )}
         </tbody>
       </table>
+      <ToastContainer/>
     </div>
   );
 };

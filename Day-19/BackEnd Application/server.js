@@ -4,7 +4,6 @@ const app=express();
 const cors=require("cors")
 let  StudentDetails=[]
 app.use(express.json()) // middleware 
-
 app.use(cors())
 
 //Get Api 

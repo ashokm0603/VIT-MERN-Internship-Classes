@@ -6,7 +6,7 @@ const AddStudent = () => {
     name: "",
     email: "",
     phone: "",
-    rollNo: "",
+    rolNo: "",
   });
 
   const handleChange = (e) => {
@@ -85,7 +85,7 @@ const AddStudent = () => {
                 type="text"
                 onChange={handleChange}
                 placeholder="Enter RollNo"
-                name="rollNo"
+                name="rolNo"
                 className="form-control"
               />
             </div>
