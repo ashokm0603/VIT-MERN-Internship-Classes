@@ -1,0 +1,16 @@
+{
+  "name": "backend-ecommerce",
+  "version": "1.0.0",
+  "description": "Ecommerce backend Application",
+  "license": "ISC",
+  "author": "ashok",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.7.0"
+  }
+}

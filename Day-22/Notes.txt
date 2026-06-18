@@ -1,0 +1,357 @@
+Database : 
+---------
+    ->Database is nothing but place where can store data 
+
+
+NoSQL (Not only SQL):
+----------------------  
+    ->NoSQL is Databases used to store , manage and maintain the data that is not fit for Relational Databases 
+    ->Ex: 
+        MongoDb , Cassandra , HBase , Neo4j , firebase 
+
+
+
+MongoDb : 
+----------
+    ->MongoDb is Nosql Database used to Store Data in form Document Format (JSON/BSON) 
+
+Tools : 
+    1. MongoDb Compass (GUI present local system )
+    2. MongoDb Atlas  (Cloud ) 
+
+
+
+    Create Database/ switch Database :
+        Syntax:     
+            use DatabaseName  
+
+Collections : 
+-------------
+    ->Collections are the group of Documents in MongoDb 
+    ->create Collections    
+        Syntax : 
+            db.createCollection('student_details') 
+
+    ->Drop Collection 
+        Syntax : 
+            db.collectionName.drop() 
+
+
+
+TO Insert Documents : 
+--------------------
+    ->To insert Document in Collections we have 2 methods 
+     1.insertOne() 
+        ->insertOne is used to insert only one Document at a time 
+        Syntax : 
+            db.collectionName.insertOne({})
+
+     2.insertMany()
+        ->insertMany is used to insert multiple Document's at a time 
+        Syntax : 
+            db.collectionName.insertMany([{},{},{},{} ])
+
+
+ Retrieve Data From Collections : 
+ --------------------------------
+    ->There are many ways to Retrieve data from Collection 
+        1. findOne() 
+            ->findOne is used to Retrieve only one Document in Collection 
+            Syntax 1:
+                db.collectionName.findOne() 
+            Syntax 2:
+                db.collectionName.findOne({filtered fields})
+                 
+            Syntax 3:
+                db.collectionName.findOne({filtered fields} ,  { projection query})
+
+        2. find() 
+            ->find is used to Retrieve multiple Documents in Collection 
+            Syntax 1:
+                db.collectionName.find() 
+            Syntax 2:
+                db.collectionName.find({filtered fields})
+                 
+            Syntax 3:
+                db.collectionName.find({filtered fields} ,  { projection query})
+
+
+    Projection : 
+    -----------------
+    ->Projection are used to display only required fields 
+    ->value 1 to project fields 
+    ->value 0 to not project fields 
+
+
+
+Data Types : 
+------------
+    1. number
+    2. string 
+    3. null 
+    4. boolean
+    5. Arrays
+    6. Objects
+    7. function 
+    8. Date 
+    9. time 
+
+
+
+Update Documents  : 
+-------------------
+    1. updateOne()
+            ->Syntax: 
+                db.collectionName.updateOne({filtered condition} ,{updated query} )
+
+    2. updateMany() 
+            ->Syntax: 
+                db.collectionName.updateMany({filtered condition} ,{updated query} )
+
+
+Update Operators : 
+------------------
+    1. $set 
+        ->used to set values or new fields in Document
+    2. $unset  
+            ->used to remove fields in Document
+
+    3. $rename 
+        ->update Fields names / rename fields 
+
+
+    4. $inc 
+        ->used to increment the Number values 
+
+    5. $pop 
+        ->this is used to remove element from the Arrays based 1 (last index value) or -1 (0th index value)
+
+    6. $push 
+        ->$push to insert new element to the Array
+
+
+    7. $pull 
+        ->$pull Operators is used to remove element from the Array based value 
+
+
+
+
+
+Delete Documents / remove Documents : 
+--------------------------------------
+    1. deleteOne() 
+            ->deleteOne is used only one Document at a time 
+            Syntax : 
+                    db.collectionName.deleteOne({filtered condition})
+
+
+    2. deleteMany()
+            ->deleteMany is used multiple Documents at a time 
+            Syntax : 
+                    db.collectionName.deleteMany({filtered condition})
+
+
+    3. remove() 
+            ->Remove() is the Deprecated function used to remove Documents from Collections 
+            Syntax : 
+                    db.collectionName.remove({filtered condition})
+
+
+
+Athematic Operators : 
+---------------------
+    1. $gt  
+    2. $lt 
+    3. $gte
+    4. $lte 
+    5. $eq 
+    6. $neq 
+
+
+
+Logical Operators : 
+------------------
+    1. $and 
+                Syntax : 
+                  db.collectionName.find({$and:[ {} , {}]})  
+    2. $or 
+                Syntax : 
+                  db.collectionName.find({$or:[ {} , {}]})  
+
+    3. $not 
+            Syntax: 
+            { field: { $not: { <operator-expression> } } }
+
+
+    4. $nor 
+            Syntax: 
+            { $nor: [{ <operator-expression> } , { <operator-expression> },... ]  } 
+
+
+db.employeeDetails.find({age:{$lt:23}} , {name:1, age:1 ,_id:0})
+
+
+
+Write a query to display employee Name , salary who is earning more than 70000 and less than 90000
+
+ display all emp  details who's age not between 30 to 40 
+
+
+
+
+
+Aggregate PipeLines : 
+--------------------
+Syntax : 
+        db.collectionName.aggregate(
+            [
+                {stag1},
+                {stag2},
+                {stag3},
+                {stag4},
+                .
+                .
+                etc
+            ]
+        )
+
+
+Aggregate Operators : 
+-----------------------
+    1. $match
+    2. $group 
+    3. $sum 
+    4. $count 
+    5. $min 
+    6. $max 
+    7. $lookup   (this is joins in Sql ) 
+    8. $out 
+    9. $project 
+    10. $limit 
+    11. $sort 
+    12. $avg
+    13. $unwind 
+
+
+
+
+lookup : 
+
+    Syntax: 
+        {
+            $lookup:{
+                from:<foreign_collection_Name> ,
+                localField:<field_from_input_collection>,
+                foreignField:<field_from_foreign_collection>
+                as:<output_field_Name>
+            }
+        }
+
+
+
+
+    1. write a query to display customer details along with order details
+
+
+
+
+
+
+MongoDb Atlas: 
+--------------
+
+
+
+
+
+query: 
+-------
+
+
+db.student_Details.insertOne({name:"sai",rolNo:"Hu2052",phone:9874561230, email:"sai@gmail.com"})
+
+
+db.subject_Details.insertMany([
+  {
+    name:"Nosql",
+    branch:"CSE",
+    duration:"20hrs",
+    code:"NO12",
+    credites:10
+  },
+  {
+    name:"CNN",
+    branch:"CSE",
+    duration:"30hrs",
+    code:"NO13",
+    credites:9
+  },
+  {
+    name:"DS",
+    branch:"CSE",
+    duration:"25hrs",
+    code:"NO14",
+    credites:10
+  },
+  {
+    name:"ADS",
+    branch:"CSE",
+    duration:"40hrs",
+    code:"NO15",
+    credites:10
+  }
+])
+
+
+
+db.subject_Details.findOne()
+
+
+
+db.subject_Details.findOne({name:"DS"})
+
+
+
+
+db.subject_Details.insertOne({
+   name: 'DS',
+  branch: 'AIML',
+  duration: '25hrs',
+  code: 'NO14',
+  credites: 10
+})
+
+
+
+
+
+
+db.subject_Details.findOne({name:"DS"})
+
+
+
+
+
+db.subject_Details.findOne({name:"DS", branch:"AIML"})
+
+
+
+
+db.subject_Details.findOne({name:"DS", branch:"AIML", Roll:"Hu12"})
+
+
+
+
+
+
+
+
+
+db.student_Details.updateMany({} , {$rename: {name:"Student_name"}} )
+
+db.student_Details.updateMany({isActive:true}, {$inc:{age:5}} )
+
+
+db.student_Details.updateOne({Student_name:"Sai Kumar"} , {$pop: {skills:1}})
+
+db.student_Details.updateOne({Student_name:"Sai Kumar"} , {$pop: {skills:-1}})
