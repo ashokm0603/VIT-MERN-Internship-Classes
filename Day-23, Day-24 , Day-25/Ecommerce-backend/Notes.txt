@@ -18,3 +18,12 @@ In API Request Client can send Data to in different way
 
 
     http://localhost:5000/api/user?gender=male&&city==bengalore
+
+
+
+
+    MVC - > 
+        1. model 
+        2. Controller
+        3. Routes 
+        

@@ -61,27 +61,50 @@ const DeleteUserBasedOnId = async (req, res) => {
       message: "deleted successfully",
       deletedUserDetails: deletedUser,
     });
-} catch (error) {
+  } catch (error) {
     console.log(error);
     res.status(500).json({ message: "Failed to delete user details" });
-}
+  }
 };
 
 //update user api
-
-const UpdateUserDetails = async(req, res) => {
+const UpdateUserDetails = async (req, res) => {
   try {
-      const updatedUser=  await Users.findByIdAndUpdate(req.params.id, req.body, { new: true });
-      
-      res.status(200).json({
-        message: "updated successfully",
-        updatedUserDetails: updatedUser,
-      });
+    const updatedUser = await Users.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+    });
 
-} catch (error) {
+    res.status(200).json({
+      message: "updated successfully",
+      updatedUserDetails: updatedUser,
+    });
+  } catch (error) {
     console.log(error);
     res.status(500).json({ message: "failed to update" });
   }
 };
 
-module.exports = { Register, Login, getAllUsers, DeleteUserBasedOnId,UpdateUserDetails };
+// get user api  -based on users gender and city
+const FilterUsers = async (req, res) => {
+  try {
+    const { qgender, qcity } = req.query;
+
+    const filteredUsers = await Users.find({ gender: qgender, city: qcity });
+    if(filteredUsers.length<=0){
+        res.status(404).json({message:"Users Not Found on this city or in this gender"})
+    }
+    res.status(200).json({ filteredUsers });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ message: "Failed to filtered user" });
+  }
+};
+
+module.exports = {
+  Register,
+  Login,
+  getAllUsers,
+  DeleteUserBasedOnId,
+  UpdateUserDetails,
+  FilterUsers
+};
