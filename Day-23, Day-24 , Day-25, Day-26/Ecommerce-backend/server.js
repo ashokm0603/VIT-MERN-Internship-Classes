@@ -10,10 +10,11 @@ DBConnection(); // Db Connect function calling
 const userRouter = require("./routes/userRouter");
 const productsRouter=require("./routes/productRouter");
 const aiRouter=require("./routes/aiRouter");
-
+const cartRouter=require("./routes/cartRouter");
 app.use("/api", userRouter);
 app.use("/api", productsRouter);
 app.use("/api/ai", aiRouter);
+app.use("/api", cartRouter);
 
 app.listen(PORT, () => {
   console.log("Server Running on Port : ", PORT);

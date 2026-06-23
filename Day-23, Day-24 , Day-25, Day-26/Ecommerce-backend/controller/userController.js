@@ -1,5 +1,7 @@
 const Users = require("../model/UsersModel");
 const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+
 //register  api
 const Register = async (req, res) => {
   try {
@@ -29,10 +31,18 @@ const Register = async (req, res) => {
 const Login = async (req, res) => {
   try {
     const { username, password } = req.body;
+
     const foundUser = await Users.findOne({ Username: username });
+
+    const token=await jwt.sign(
+      { userId: foundUser.id, email: foundUser.Username },
+      process.env.secret_key,
+      { expiresIn: "10Min" },
+    );
+
     const ComparedPassword = await bcrypt.compare(password, foundUser.Password);
     if (ComparedPassword) {
-      res.status(200).json({ message: "Login Successful" });
+      res.status(200).json({ message: "Login Successful", token });
     } else {
       res.status(400).json({ message: "invalid password" });
     }
@@ -90,8 +100,10 @@ const FilterUsers = async (req, res) => {
     const { qgender, qcity } = req.query;
 
     const filteredUsers = await Users.find({ gender: qgender, city: qcity });
-    if(filteredUsers.length<=0){
-        res.status(404).json({message:"Users Not Found on this city or in this gender"})
+    if (filteredUsers.length <= 0) {
+      res
+        .status(404)
+        .json({ message: "Users Not Found on this city or in this gender" });
     }
     res.status(200).json({ filteredUsers });
   } catch (error) {
@@ -106,5 +118,5 @@ module.exports = {
   getAllUsers,
   DeleteUserBasedOnId,
   UpdateUserDetails,
-  FilterUsers
+  FilterUsers,
 };
