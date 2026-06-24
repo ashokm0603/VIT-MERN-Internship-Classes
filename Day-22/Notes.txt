@@ -231,6 +231,7 @@ Aggregate Operators :
     11. $sort 
     12. $avg
     13. $unwind 
+    14. $skip
 
 
 

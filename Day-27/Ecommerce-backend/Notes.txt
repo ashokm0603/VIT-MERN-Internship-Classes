@@ -1,0 +1,29 @@
+MVC Architecture : 
+-------------------
+        |
+        |->Model (Model holds the data/ all DB Schema's/ DB Models logic present)
+        |
+        |->View (presentation layer->React JS )
+        |
+        |->Controller (main business logic present like to handle request and response) 
+
+
+
+
+In API Request Client can send Data to in different way
+    1. body 
+    2. params 
+    3. query 
+    4. header
+
+
+    http://localhost:5000/api/user?gender=male&&city==bengalore
+
+
+
+
+    MVC - > 
+        1. model 
+        2. Controller
+        3. Routes 
+        
