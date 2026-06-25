@@ -24,6 +24,7 @@ function NavBar() {
             <Nav.Link href="/home">Home</Nav.Link>
             <Nav.Link href="/login">Login</Nav.Link>
             <Nav.Link href="/register">Register</Nav.Link>
+            <Nav.Link href="/products">View Products</Nav.Link>
             <NavDropdown title="Features" id="basic-nav-dropdown">
               <NavDropdown.Item href="/add-products">
                 Add Products

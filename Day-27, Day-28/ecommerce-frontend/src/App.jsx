@@ -35,6 +35,8 @@ import ItemsProvider from "./services/ItemsProvider";
 import CartProvider from "./services/CartProvider";
 import Cart from "./pages/Cart";
 import AddProducts from "./pages/AddProducts";
+import ViewProducts from "./pages/ViewProducts";
+import DeleteProducts from "./pages/DeleteProducts";
 // import AComponent from "./AComponent";
 // import BComponent from "./BComponent";
 // import CComponent from "./CComponent";
@@ -60,6 +62,8 @@ const App = () => {
             />
             <Route path="cart" element={<Cart />} />
             <Route path="/add-products" element={<AddProducts/>}/>
+            <Route path="/products" element={<ViewProducts/>}/>
+            <Route path="/delete-products" element={<DeleteProducts/>}/>
 
             
             <Route path="*" element={<PageNotFound />} />

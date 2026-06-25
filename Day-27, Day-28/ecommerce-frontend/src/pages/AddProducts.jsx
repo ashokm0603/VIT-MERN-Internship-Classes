@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState } from "react";
 import { Col, Form, Row } from "react-bootstrap";
 import { toast, ToastContainer } from "react-toastify";
@@ -13,12 +14,20 @@ const AddProducts = () => {
     about: "",
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     try {
       e.preventDefault();
-      console.log(productDetails);
-      
-      toast.success("product added Successfully")
+
+      let token = localStorage.getItem("token");
+
+     const response=await axios.post("http://localhost:5000/api/add-product", productDetails, {
+        headers: {
+          authorization:`Bearer ${token}`,
+        },
+      });
+      console.log(response);
+
+      toast.success("product added Successfully");
     } catch (error) {
       console.log(error);
     }
@@ -30,7 +39,7 @@ const AddProducts = () => {
 
   return (
     <div>
-      <h1>Add Products</h1>
+      <h1 className="text-center bg-info m-4 rounded p-3">Add Products</h1>
       <div className="container" id="register-form-container">
         <form action="" onSubmit={handleSubmit}>
           <Row>

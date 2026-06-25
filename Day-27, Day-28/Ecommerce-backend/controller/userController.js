@@ -37,7 +37,7 @@ const Login = async (req, res) => {
     const token = await jwt.sign(
       { userId: foundUser.id, email: foundUser.Username },
       process.env.secret_key,
-      { expiresIn: "10Min" },
+      { expiresIn: "50Min" },
     );
 
     const ComparedPassword = await bcrypt.compare(password, foundUser.Password);
