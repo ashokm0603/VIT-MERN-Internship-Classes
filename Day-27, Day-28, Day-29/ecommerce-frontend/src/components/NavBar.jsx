@@ -32,11 +32,11 @@ function NavBar() {
               <NavDropdown.Item href="/delete-products">
                 Delete Products
               </NavDropdown.Item>
-              <NavDropdown.Item href="edit-products">
+              <NavDropdown.Item href="/edit-products">
                 Update Products
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Users</NavDropdown.Item>
+              <NavDropdown.Item href="/users">Users</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

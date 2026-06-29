@@ -37,6 +37,8 @@ import Cart from "./pages/Cart";
 import AddProducts from "./pages/AddProducts";
 import ViewProducts from "./pages/ViewProducts";
 import DeleteProducts from "./pages/DeleteProducts";
+import UpdateProducts from "./pages/UpdateProducts";
+import Users from "./pages/Users";
 // import AComponent from "./AComponent";
 // import BComponent from "./BComponent";
 // import CComponent from "./CComponent";
@@ -54,16 +56,20 @@ const App = () => {
             <Route path="/register" element={<Register />} />
             <Route
               path="/home"
+              path="/home"
               element={
                 <ProtectedRoute>
                   <Home />
                 </ProtectedRoute>
               }
             />
-            <Route path="cart" element={<Cart />} />
+            <Route path="/cart" element={<Cart />} />
             <Route path="/add-products" element={<AddProducts/>}/>
             <Route path="/products" element={<ViewProducts/>}/>
             <Route path="/delete-products" element={<DeleteProducts/>}/>
+            <Route path="/edit-products" element={<UpdateProducts/>}/>
+            <Route path="/edit-products" element={<UpdateProducts/>}/>
+            <Route path="/users" element={<Users/>}/>
 
             
             <Route path="*" element={<PageNotFound />} />
